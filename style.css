@@ -566,6 +566,20 @@ small {
   background-color: #00695c !important;
 } */
 
+.white-text{
+  font-weight: 300;
+}
+
+@media screen and (max-width:420px) {
+  .text-width{
+    margin-left: 4rem;
+    margin-top: 0.4rem;
+  }
+  .black-text{
+    margin-left: 4rem;
+  }
+}
+
 @media (min-width: 1200px) {
   #experience .container {
     width: 860px;
