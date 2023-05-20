@@ -614,6 +614,7 @@ small {
     background: #fff;
     height: 64px;
     position: absolute;
+    padding-bottom: 5.2rem;
   }
   nav a.button-collapse, nav a.button-collapse i {
     color: #009688;
@@ -651,7 +652,7 @@ small {
   }
   .name-title span {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
   }
   h3, .container {
     position: relative;
