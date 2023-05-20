@@ -578,6 +578,9 @@ small {
   .black-text{
     margin-left: 2rem;
   }
+  .only{
+    padding-bottom: 5.2rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -614,7 +617,6 @@ small {
     background: #fff;
     height: 64px;
     position: absolute;
-    padding-bottom: 5.2rem;
   }
   nav a.button-collapse, nav a.button-collapse i {
     color: #009688;
