@@ -25,6 +25,31 @@
     <link rel="stylesheet" href="style.css" />
     <title>Brijesh Kumar Vishwakarma | Software Developer</title>
 
+    <!-- Total number of experience count -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function calculateExperience(startYear, startMonth) {
+                const startDate = new Date(startYear, startMonth - 1);
+                const currentDate = new Date();
+                
+                let years = currentDate.getFullYear() - startDate.getFullYear();
+                let months = currentDate.getMonth() - startDate.getMonth();
+                
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+    
+                const experienceElement = document.getElementById("totalExperience");
+                if (experienceElement) {
+                    experienceElement.textContent = 
+                        years > 0 ? `${years} years and ${months} months` : `${months} months`;
+                }
+            }
+            calculateExperience(2023, 1);
+        });
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
     <script>
@@ -279,7 +304,7 @@
           </h2>
         </blockquote> -->
                 <p>
-                    Trustworthy Software Developer with around 2 years and 2 months of practical experience and dedicated
+                    Trustworthy Software Developer with around <span id="totalExperience"></span> of practical experience and dedicated
                     work
                     ethic. Self-motivated to consistently provide good results in line with strongest targets and
                     deadlines. Versatile software developer works well both as part of team and individual.
